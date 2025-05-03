@@ -8,10 +8,10 @@ import getimage
 @st.cache_resource
 def enco_and_params_load():
     #params
-    with open(r'pickle_data\parametrs_details.pkl','rb') as file:
+    with open(r'pickle_data/parametrs_details.pkl','rb') as file:
         data_params=pkl.load(file)
     #data encoding
-    with open(r'pickle_data\car_encoder.pkl','rb') as file:
+    with open(r'pickle_data/car_encoder.pkl','rb') as file:
         encoder=pkl.load(file)
     return data_params,encoder
 
@@ -19,7 +19,7 @@ def enco_and_params_load():
 @st.cache_resource
 def load_model():
     
-    with open(r'pickle_data\car_model.pkl','rb') as file:
+    with open(r'pickle_data/car_model.pkl','rb') as file:
         car_model=pkl.load(file)
     return car_model
 
