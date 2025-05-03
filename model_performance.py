@@ -11,7 +11,7 @@ def Performance():
     st.header('Model used')
     st.markdown('<h5>RandomForestRegressor</h5>', unsafe_allow_html=True)
     st.header("Model Performance")
-    with open(r'pickle_data\Y_test_y_pred.pkl','rb') as file:
+    with open(r'pickle_data/Y_test_y_pred.pkl','rb') as file:
         y=pkl.load(file)
         
     y_pred = y['y_pred']
